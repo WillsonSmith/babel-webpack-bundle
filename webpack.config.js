@@ -2,7 +2,9 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './src/app.js',
+  // for polyfill
+  // entry: ['babel-polyfill', './src/app.js'],
+  entry: ['./src/app.js'],
   output: {path: __dirname + '/js', filename: 'build.js'},
   module: {
     loaders: [
